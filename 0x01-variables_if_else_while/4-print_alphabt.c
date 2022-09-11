@@ -2,19 +2,24 @@
 #include <unistd.h>
 
 /**
- * main -Entry point
- * Description: prints allsingle digit numbers of
- * base 10 from 0
+ * main - Entry point
+ * Description: prints lowercase alphabets
  * Return: 0 (success), otherwise 1 (error)
-*/
+ */
 
 int main(void)
 {
-	int a;
+	int ch;
 
-	for (a = 0; a < 10; a++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		printf("%d", a);
+		if (ch != 'e' && ch != 'q')
+		{
+			putchar(ch);
+		}
+		else
+		{
+		}
 	}
 	putchar('\n');
 	return (0);
